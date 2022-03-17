@@ -1,0 +1,1 @@
+Hi there in this code I went with class rather than functions and calling them using prototype and everything and I tried with functions and preety much confusing and I had previosuly worked a lot with class that's why I went with class in this code. I accept deductions and I really appologize for that.
