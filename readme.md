@@ -1,1 +1,3 @@
-Hi there in this code I went with class rather than functions and calling them using prototype and everything and I tried with functions and preety much confusing and I had previosuly worked a lot with class that's why I went with class in this code. I accept deductions and I really appologize for that.
+Hey Chris, There are some errors in my code 
+Sometimes it gives error with parseInt, sometimes it's while adding new quantity to the previous ones and it also falls down sometimes when you try to buy overquantity and it sells it.
+Im so sorry for using classes but I treid with function but I was just getting confused; Thus I end up writing my code with class. I am so sorry about that but I'm use to class.
