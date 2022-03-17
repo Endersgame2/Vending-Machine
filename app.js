@@ -1,3 +1,15 @@
+const items = [
+  { name: "Smarties", code: "A01", quantity: 10, price: 1.6 },
+  { name: "Caramilk Bar", code: "A02", quantity: 5, price: 1.3 },
+  { name: "Dairy Milk", code: "A03", quantity: 1, price: 1.35 },
+  { name: "Aero", code: "A04", quantity: 1, price: 0.25 },
+  { name: "Protein Bar", code: "B01", quantity: 6, price: 2.25 },
+  { name: "Salt & Vinegar Chips", code: "B02", quantity: 10, price: 1.45 },
+  { name: "Ketchup Chips", code: "B03", quantity: 3, price: 1.45 },
+  { name: "Chocolate Cookies", code: "B04", quantity: 1, price: 0.45 },
+  { name: "Gummy Bears", code: "C02", quantity: 300, price: 0.01 },
+  { name: "Caramels", code: "C01", quantity: 0, price: 3.25 },
+];
 
 class VendingMachine {  
   qnt = 0;     
@@ -56,10 +68,12 @@ addNewItem(name, code, quantity, price){
     return this.toString(20);
   }
   this.qnt++;
-  // new const
+
+
+
   const CompLength = pareseInt(this.items.length);
   for( let y = 0;y<this.items.length;y++){
-    if(this.items[y].code == code){
+    if(this.items[y].code === code){
       return " Sorry!"+ code+" this item has salredy used the code, You can select another code"
     }
   }
@@ -67,6 +81,7 @@ addNewItem(name, code, quantity, price){
   this.items.push(newitems);
   return "New Products added"+ items[CompLength].name + "for only"+ items[CompLength].price;
 }
+
 repair(){
   this.qnt =0;
 }
@@ -81,21 +96,7 @@ toString(length){
     result += characters.charAt(Math.floor(Math.random()*charactersLength));
   }
   return result;
-}
-}
-
-const items = [
-      { name: "Smarties", code: "A01", quantity: 10, price: 1.6 },
-      { name: "Caramilk Bar", code: "A02", quantity: 5, price: 1.3 },
-      { name: "Dairy Milk", code: "A03", quantity: 1, price: 1.35 },
-      { name: "Aero", code: "A04", quantity: 1, price: 0.25 },
-      { name: "Protein Bar", code: "B01", quantity: 6, price: 2.25 },
-      { name: "Salt & Vinegar Chips", code: "B02", quantity: 10, price: 1.45 },
-      { name: "Ketchup Chips", code: "B03", quantity: 3, price: 1.45 },
-      { name: "Chocolate Cookies", code: "B04", quantity: 1, price: 0.45 },
-      { name: "Gummy Bears", code: "C02", quantity: 300, price: 0.01 },
-      { name: "Caramels", code: "C01", quantity: 0, price: 3.25 },
-    ];
+}}
 let machine = new VendingMachine();
 machine.add(items);
 machine.addNewItem("BananaShake", "D01", 3, 5);
